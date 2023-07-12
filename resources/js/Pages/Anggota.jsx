@@ -332,11 +332,11 @@ export default function Dashboard({ auth, anggota }) {
                             {anggota?.map((item, index) => (
                                 <tr key={index} className="text-gray-900">
                                     <td>{item.id_anggota}</td>
-                                    <td>{item.seleksi_masuk}</td>
-                                    <td>{item.program_studi}</td>
                                     <td>{item.nama_anggota}</td>
-                                    <td>{item.strata}</td>
                                     <td>{item.departemen}</td>
+                                    <td>{item.strata}</td>
+                                    <td>{item.program_studi}</td>
+                                    <td>{item.seleksi_masuk}</td>
                                     <td className="flex gap-2">
                                         <button
                                             name={item.id_anggota}
